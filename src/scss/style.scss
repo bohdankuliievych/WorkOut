@@ -1,0 +1,54 @@
+@use 'sass:math';
+@use 'sass:map';
+@use 'modules/_index' as m;
+
+// GENERAL
+html {
+  // Custom scrollbar:
+  // Firefox
+  scrollbar-color: m.$black m.$white;
+  // Chrome/Edge/Safari
+  &::-webkit-scrollbar {
+    width: 12px;
+    background-color: m.$black;
+  }
+  &::-webkit-scrollbar-track {
+    background: m.$white;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: m.$black;
+    border-radius: 20px;
+  }
+  font-family: sans-serif;
+}
+._wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  font-size: m.rem(16);
+}
+._container {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+// give this class to block containing the image
+._ibg {
+  position: relative;
+  & img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+// GENERAL END
+
+// HEADER
+
+// HEADER END
+
+// FOOTER
+
+// FOOTER END
