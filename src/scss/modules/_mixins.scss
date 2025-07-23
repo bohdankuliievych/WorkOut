@@ -31,6 +31,11 @@ $breakpoints-down: (
     @content;
   }
 }
+@mixin wMin($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
 @mixin flexC {
   display: flex;
   align-items: center;
