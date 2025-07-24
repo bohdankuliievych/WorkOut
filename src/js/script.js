@@ -1,7 +1,7 @@
 // hamburger button
 const btnOpen = document.querySelector('#btnOpen');
 // create MediaQueryList object
-const media = window.matchMedia('(width < 40em)');
+const media = window.matchMedia('(width < 700px)');
 const topNavMenu = document.querySelector('.topnav__menu');
 const main = document.querySelector('main');
 const body = document.querySelector('body');

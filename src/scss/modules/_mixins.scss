@@ -27,7 +27,7 @@ $breakpoints-down: (
 
 // SIMPLE MIXINS
 @mixin wMax($width) {
-  @media screen and (max-width: $width) {
+  @media screen and (max-width: calc($width - 0.02px)) {
     @content;
   }
 }
