@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- GULP head -->
+  <!-- @@include('html/head.html', { "title": "Musik" }) -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <title>WorkOut</title>
+    <!-- GULP CSS -->
+    <!-- <link rel="stylesheet" href="css/style.min.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="_wrapper">
+      <!-- GULP header -->
+      <!-- @@include('html/header.html', {}) -->
+      <header class="header _container">
+        <h1 class="header__logo logo">
+          <div class="logo__image">
+            <a href="#">
+              <img src="img/header/WK.svg" alt="" />
+            </a>
+          </div>
+          <div class="header__logo logo logo_big">
+            <a href="#">
+              <span class="logo__title">Work<span class="pink">Out</span></span>
+              <span class="logo__subtitle">Believe in yourself</span>
+            </a>
+          </div>
+        </h1>
+
+        <nav class="header__nav topnav">
+          <span id="nav-label" hidden>Navigation</span>
+          <button
+            id="btnOpen"
+            class="topnav__open"
+            aria-expanded="false"
+            aria-labelledby="nav-label"
+          >
+            <span></span><span></span><span></span>
+          </button>
+          <!-- menu -->
+          <div class="topnav__menu" role="dialog" aria-labelledby="nav-label">
+            <ul class="topnav__links">
+              <li class="topnav__item">
+                <a href="#" class="topnav__link">EXErCICES</a>
+              </li>
+              <li class="topnav__item">
+                <a href="#" class="topnav__link">COMmUNiTY</a>
+              </li>
+              <li class="topnav__item">
+                <a href="#" class="topnav__link">pricing</a>
+              </li>
+              <li class="topnav__item">
+                <a href="#" class="topnav__link">ABOuT US</a>
+              </li>
+            </ul>
+            <div class="topnav__login">
+              <a href="#" class="topnav__link">LOgIN</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!--=============================-->
+      <!-- GULP main -->
+      <!-- @@include('html/main.html', {}) -->
+      <main class="main">
+        <section class="hero _container">
+          <picture class="hero__image _ibg">
+            <source
+              srcset="img/hero/Woman-desktop.jpg"
+              media="(width >=
+              480px)"
+            />
+            <img src="img/hero/Woman.jpg" alt="" />
+          </picture>
+
+          <div class="hero__content">
+            <div class="hero__title">
+              <div class="big">4 WEEK</div>
+              <div>Workout Plan</div>
+            </div>
+            <div class="hero__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              fringilla, lacus eget consequat tincidunt, lectus ex bibendum
+              libero, eget iaculis quam arcu quis mauris. Donec ex neque,
+              egestas in faucibus. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Maecenas
+            </div>
+            <a href="#" class="hero__button">TRY FOR FREE</a>
+          </div>
+
+          <!-- <div class="hero__cards"> -->
+          <div class="hero__card card">
+            <div class="card__title">GET INSPIRED</div>
+            <div class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              fringil. lacus eget consequat tincidunt, lectus ex.
+            </div>
+            <div class="card__link">
+              <a href="#">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <ellipse
+                    cx="20"
+                    cy="19.6396"
+                    rx="20"
+                    ry="19.6396"
+                    fill="#F24B88"
+                  />
+                  <path
+                    d="M14.4649 23.5013C14.1693 23.7915 14.1693 24.262 14.4649 24.5523C14.7604 24.8425 15.2396 24.8425 15.5351 24.5523L14.4649 23.5013ZM24.9492 15C24.9492 14.5896 24.6104 14.2569 24.1924 14.2569L17.3813 14.2569C16.9633 14.2569 16.6245 14.5896 16.6245 15C16.6245 15.4104 16.9633 15.7432 17.3813 15.7432H23.4356V21.6884C23.4356 22.0988 23.7744 22.4315 24.1924 22.4315C24.6104 22.4315 24.9492 22.0988 24.9492 21.6884L24.9492 15ZM15.5351 24.5523L24.7275 15.5255L23.6573 14.4745L14.4649 23.5013L15.5351 24.5523Z"
+                    fill="#F2F2F2"
+                  />
+                </svg>
+                <span>Explore More</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__card card">
+            <div class="card__title">CHALLENGE YOURSELF</div>
+            <div class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              fringil. lacus eget consequat tincidunt, lectus ex.
+            </div>
+            <div class="card__link">
+              <a href="#">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <ellipse
+                    cx="20"
+                    cy="19.6396"
+                    rx="20"
+                    ry="19.6396"
+                    fill="#F24B88"
+                  />
+                  <path
+                    d="M14.4649 23.5013C14.1693 23.7915 14.1693 24.262 14.4649 24.5523C14.7604 24.8425 15.2396 24.8425 15.5351 24.5523L14.4649 23.5013ZM24.9492 15C24.9492 14.5896 24.6104 14.2569 24.1924 14.2569L17.3813 14.2569C16.9633 14.2569 16.6245 14.5896 16.6245 15C16.6245 15.4104 16.9633 15.7432 17.3813 15.7432H23.4356V21.6884C23.4356 22.0988 23.7744 22.4315 24.1924 22.4315C24.6104 22.4315 24.9492 22.0988 24.9492 21.6884L24.9492 15ZM15.5351 24.5523L24.7275 15.5255L23.6573 14.4745L14.4649 23.5013L15.5351 24.5523Z"
+                    fill="#F2F2F2"
+                  />
+                </svg>
+                <span>Explore More</span>
+              </a>
+            </div>
+          </div>
+          <!-- </div> -->
+        </section>
+        <!--=============================-->
+        <section class="training _container">
+          <h2 class="training__title">latest training</h2>
+          <div class="training__cards">
+            <div class="training__card t-card">
+              <div class="t-card__image _ibg">
+                <img src="img/training/RUNNING.jpg" alt="" />
+                <!-- video is hidden by default -->
+                <video
+                  id="cardVideo"
+                  src="#"
+                  controls
+                  preload="none"
+                  class="t-card__video hidden"
+                  poster="img/training/RUNNING.jpg"
+                >
+                  <p>Your browser does not support the video tag.</p>
+                </video>
+                <span>running</span>
+              </div>
+              <h3 class="t-card__title">running</h3>
+              <div class="t-card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas fringilla, lacus eget consequat
+              </div>
+              <a href="#" class="t-card__button btn">SEe MOrE</a>
+            </div>
+            <!--=============================-->
+            <div class="training__card t-card">
+              <div class="t-card__image _ibg">
+                <img src="img/training/LIFTING.jpg" alt="" />
+                <!-- video is hidden by default -->
+                <video
+                  id="cardVideo"
+                  src="#"
+                  controls
+                  preload="none"
+                  class="t-card__video hidden"
+                  poster="img/training/LIFTING.jpg"
+                >
+                  <p>Your browser does not support the video tag.</p>
+                </video>
+                <span>lifting</span>
+              </div>
+              <h3 class="t-card__title">lifting</h3>
+              <div class="t-card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas fringilla, lacus eget consequat
+              </div>
+              <a href="#" class="t-card__button btn">SEe MOrE</a>
+            </div>
+            <!--=============================-->
+            <div class="training__card t-card">
+              <div class="t-card__image _ibg">
+                <img src="img/training/YOGA.jpg" alt="" />
+                <!-- video is hidden by default -->
+                <video
+                  id="cardVideo"
+                  src="#"
+                  controls
+                  preload="none"
+                  class="t-card__video hidden"
+                  poster="img/training/YOGA.jpg"
+                >
+                  <p>Your browser does not support the video tag.</p>
+                </video>
+                <span>yoga</span>
+              </div>
+              <h3 class="t-card__title">yoga</h3>
+              <div class="t-card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas fringilla, lacus eget consequat
+              </div>
+              <a href="#" class="t-card__button btn">SEe MOrE</a>
+            </div>
+          </div>
+          <a href="#" class="training__button btn">SEe MOrE</a>
+        </section>
+        <!--=============================-->
+        <section class="potential _container">
+          <div class="potential__title">DISCOVER your POTENCIAL</div>
+          <p class="potential__text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum. text of the printing and typesetting
+          </p>
+          <div class="potential__buttons">
+            <a href="#" class="potential__button btn">VIew PLANS</a>
+            <a href="#" class="potential__button potential__button_dark"
+              >LEArn MORE</a
+            >
+          </div>
+        </section>
+      </main>
+      <!--=============================-->
+      <!-- GULP footer -->
+      <!-- @@include('html/footer.html', {}) -->
+      <footer class="footer _container">
+        <div class="footer__general">
+          <div class="footer__logo logo">
+            <div class="logo__image">
+              <a href="#">
+                <img src="img/header/WK.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="footer__logo logo logo_big">
+            <a href="#">
+              <span class="logo__title">Work<span class="pink">Out</span></span>
+              <span class="logo__subtitle">Believe in yourself</span>
+            </a>
+          </div>
+          <div class="footer__social">
+            <a href="#">
+              <img src="img/footer/Asset 2.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="img/footer/Asset 3.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="img/footer/Asset 4.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="img/footer/Asset 6.png" alt="" />
+            </a>
+          </div>
+
+          <div class="footer__contact contact">
+            <div class="footer__info">
+              <div class="contact__title">info</div>
+              <ul class="contact__links">
+                <li class="contact__link">
+                  <a href="#">About</a>
+                </li>
+                <li class="contact__link">
+                  <a href="#">Careers</a>
+                </li>
+                <li class="contact__link">
+                  <a href="#">Press</a>
+                </li>
+                <li class="contact__link">
+                  <a href="#">Product Updates</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__get-in-touch">
+              <div class="contact__title">get in touch</div>
+              <ul class="contact__links">
+                <li class="contact__link">
+                  <a href="#">About Us</a>
+                </li>
+                <li class="contact__link">
+                  <a href="#">Support</a>
+                </li>
+                <li class="contact__link">
+                  <a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          Copyright &copy; 2021 Enisson Lemos | All right reserved
+        </div>
+        <div class="footer__terms">Terms & Conditions</div>
+      </footer>
+    </div>
+    <!-- Gulp JavaScript -->
+    <!-- <script src="js/app.min.js"></script> -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
