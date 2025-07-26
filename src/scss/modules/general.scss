@@ -1,0 +1,61 @@
+@use '_index' as m;
+html {
+  // Custom scrollbar:
+  // Firefox
+  scrollbar-color: m.$black m.$white;
+  // Chrome/Edge/Safari
+  &::-webkit-scrollbar {
+    width: 12px;
+    background-color: m.$black;
+  }
+  &::-webkit-scrollbar-track {
+    background: m.$white;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: m.$black;
+    border-radius: 20px;
+  }
+  font-family: sans-serif;
+}
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+}
+._wrapper {
+  width: 100%;
+  min-height: 100%;
+
+  overflow: hidden;
+  font-size: m.rem(16);
+  background-color: m.$color_3;
+}
+._container {
+  padding: 0 12px;
+  margin: 0 auto;
+  @include m.wMin(700px) {
+    max-width: 1192px;
+    // padding: 0;
+  }
+  // padding: 0 15px;
+}
+// give this class to block containing the image
+._ibg {
+  position: relative;
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.btn {
+  background-color: m.$color_1;
+  color: m.$white;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+}
